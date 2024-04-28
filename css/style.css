@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    color: white;
+}
+
+.clear{clear: both;}
+
+header{
+    background: #495168;
+    padding: 10px 0;
+}
+
+header > .center{
+    display: flex;
+}
+
+.logo{
+    width: 50%;
+}
+
+nav.mobile{
+    display: none;
+}
+
+.menu{
+    text-align: right;
+    width: 50%;
+}
+
+.menu ul{list-style-type: none;}
+.menu li{
+    margin-right: 15px;
+    display: inline-block;
+}
+/*Sessão Chamada*/
+section.texto-chamada{
+    background: #2a2344;
+    padding: 30px 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+section.texto-chamada i{
+    font-size: 40px;
+}
+
+section.texto-chamada h2{
+    margin-top: 10px;
+
+}
+section.texto-chamada h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+section.texto-chamada b{
+    color: #ccbd9e;
+}
+
+/*Sessão Loja*/
+
+section.loja{
+    padding: 30px 0;
+}
+
+section.loja > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loja-wraper{
+    width: 33.3%;
+    padding: 30px;
+}
+
+.box-single-loja{
+    height: 100%;
+    border: 1px solid #555;
+}
+
+.box-single-loja img{
+    max-width: 100%;
+}
+
+.box-single-loja h2,
+.box-single-loja p{
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.loja-wraper a{
+    color: white;
+    background: #495168;
+    padding: 10px 8px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+/*Sessão de novidades*/
+
+section.novidades{
+    padding: 30px 0;
+}
+
+.box-single-noticia{
+    padding: 40px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.box-single-noticia h2{
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.box-single-noticia p{
+    color: black;
+}
+
+.box-single-noticia img{
+    width: 180px;
+    float: left;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.w50 h1{    
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: normal;
+    color: #495168;
+    text-align: center;
+}
+
+.depoimentos ul{
+    list-style-position: inside;
+}
+
+.depoimentos li{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2a2344;
+}
+/*Footer*/
+
+.text-rigth{text-align: right;}
+
+footer.barra{
+    padding: 20px 0;
+    background: #2a2344;
+}
+
+footer.barra a{
+    color:#ccbd9e;
+    text-decoration: none;
+}
+
+footer.barra2{
+    padding: 10px 0;
+    background: #495168;
+    text-align: center;
+    color: #ccbd9e;
+}
+
+@media screen and (max-width: 768px){
+    .loja-wraper{
+        width: 100%;
+        max-width: 500px;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .w50{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .logo,
+    nav.menu{
+        display: none;
+    }
+
+    .logo-mobile a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    nav.mobile{
+        position: relative;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    nav.mobile h3{
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+    }
+
+    nav.mobile ul{
+        background: #495168;
+        position: absolute;
+        left: -2%;
+        top: 30px;
+        width: 104%;
+        text-align: center;
+    }
+
+    nav.mobile li{
+        padding: 8px 0;
+        border: 1px solid white;
+    }
+
+    nav.mobile a{
+        color: white;
+        text-decoration: none;
+    }
+}
